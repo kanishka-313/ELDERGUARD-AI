@@ -1,166 +1,187 @@
-🛡️ ElderGuard AI
-AI-Powered Companion & Safety System for the Elderly
-ElderGuard AI is an intelligent elder-care platform designed to help senior citizens live more safely and independently while keeping their families and caregivers connected through AI-powered monitoring, voice assistance, health insights, medication reminders, and emergency alerts.
+<div align="center">
 
-🌟 Why ElderGuard AI?
-As people age, living independently can become challenging. Missed medications, falls, emergencies, loneliness, and difficulty communicating with caregivers can create serious risks.
-ElderGuard AI bridges this gap with an AI-powered digital companion that provides continuous assistance and keeps caregivers informed when attention is needed.
-✨ Key Features
-- 🤖  AI Companion(Carebot) — Voice-based AI companion for elderly users
-- 🚨 SOS & Emergency Alerts — Quickly notify caregivers during emergencies
-- 🩺 Fall Detection & Safety Monitoring — Detect potential falls and trigger alerts
-- 💊 Medication Reminders — Reminders with medication tracking
-- 👨‍👩‍👧 Care Circle — Connect elderly users with family and caregivers
-- ❤️ Health Overview — Monitor important health and activity information
-- 📅 Appointments & Schedules — Manage doctor appointments and daily routines
-- 🗣️ Multilingual Voice AI — Support for regional-language interaction
-- 🧠 AI-Powered Assistance — Intelligent responses and personalized support
-- 📊 Activity Monitoring — Track recent activities and important events
-🏗️ System Architecture
-                    ┌─────────────────────┐
-                    │   ElderGuard AI UI   │
-                    │   React + Vite       │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   AI Companion      │
-                    │      Mitra           │
-                    └──────────┬──────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              ▼                ▼                ▼
-        Voice Services    Safety System    Health & Routine
-              │                │                │
-              ▼                ▼                ▼
-        Voice AI / ASR     SOS / Alerts     Medication
-        Multilingual       Fall Detection   Appointments
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Java REST API     │
-                    │      Backend        │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │      Supabase       │
-                    │ Database + Services │
-                    └─────────────────────┘
+# 🛡️ ElderGuard AI
 
-🛠️ Tech Stack
-Frontend
-- React
-- Vite
-- JavaScript
-- CSS
-Backend
-- Java
-- REST API
-- Maven
-AI & Voice
-- Generative AI
-- Voice AI
-- Speech Recognition
-- Multilingual AI
-Database & Services
-- Supabase
-Development Tools
-- Git & GitHub
-- VS Code
-📂 Project Structure
-ELDERGUARD-AI/
-│
-├── backend/
-│   ├── src/
-│   │   └── main/
-│   │       └── java/
-│   ├── pom.xml
-│   └── *.ipynb
-│
-├── public/
-│
-├── src/
-│   ├── components/
-│   ├── context/
-│   ├── services/
-│   ├── views/
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── supabase_schema.sql
-├── package.json
-├── vite.config.js
-├── .env.example
-└── README.md
+### AI-Powered Elder Care, Safety & Companion System
 
-🚀 Getting Started
-1. Clone the repository
-git clone https://github.com/kanishka-313/ELDERGUARD-AI.git
-cd ELDERGUARD-AI
+<p>
+  <b>Making aging safer, smarter, and more connected with AI.</b>
+</p>
 
-2. Install frontend dependencies
-npm install
+<p>
+  <img src="https://img.shields.io/badge/AI-Generative%20AI-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Voice-AI-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Backend-Java-orange?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Database-Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+</p>
 
-3. Configure environment variables
-Create a .env file using .env.example:
-cp .env.example .env
+<p>
+  <a href="https://github.com/kanishka-313/ELDERGUARD-AI">
+    <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github" />
+  </a>
+</p>
 
-Add your required API keys and Supabase configuration.
-⚠️ Never commit your .env file or expose API keys publicly.
+</div>
 
-4. Start the frontend
-npm run dev
+---
 
-5. Run the backend
-Navigate to the backend:
-cd backend
+## 🌟 Overview
 
-Then run the Java backend using Maven.
-🎯 Use Cases
-For elderly users
+**ElderGuard AI** is an AI-powered elder-care platform designed to help senior citizens live more safely and independently while keeping family members and caregivers connected.
+
+The platform combines **Generative AI, Voice AI, safety monitoring, medication reminders, emergency alerts, activity tracking, appointments, and caregiver communication** into one unified system.
+
+At the heart of the platform is **Mitra**, an AI companion designed to provide elderly users with conversational assistance and support.
+
+---
+
+## 🎯 Problem
+
+As people age, several challenges can affect their safety and independence:
+
+- Difficulty managing daily routines
+- Missed medication
+- Delayed emergency assistance
+- Risk of falls and accidents
+- Limited communication with caregivers
+- Social isolation
+- Difficulty using complex digital interfaces
+- Language barriers
+
+Traditional healthcare applications often focus on data collection rather than creating an **elder-friendly intelligent companion**.
+
+---
+
+## 💡 Our Solution
+
+ElderGuard AI provides a simple and intelligent interface where elderly users can receive assistance through **voice and conversational interaction**, while caregivers can monitor important activities and receive alerts when attention is required.
+
+### The platform focuses on:
+
+> **Assist → Monitor → Detect → Alert → Connect**
+
+---
+
+# ✨ Key Features
+
+## 🤖  AI Companion(Carebot)
+
+A conversational AI companion designed specifically for elderly users.
+
+- Natural interaction
 - Voice-based assistance
-- Medication reminders
-- Emergency assistance
 - Daily routine support
-- Multilingual interaction
-For family members
-- Safety notifications
-- Activity monitoring
+- AI-powered responses
+- Elder-friendly interaction
+
+---
+
+## 🚨 Emergency & SOS System
+
+Provides a quick emergency mechanism for elderly users.
+
+- SOS activation
 - Emergency alerts
-- Care circle management
-For caregivers
-- Patient activity visibility
-- Appointment management
-- Alerts and notifications
-- Centralized elder-care information
-💡 What We Learned
-Building ElderGuard AI helped us explore:
-- Agentic and Generative AI
-- Voice AI and multilingual interaction
-- Full-stack application development
-- REST API architecture
-- Database integration
-- Human-centered design
-- AI-assisted healthcare workflows
-- Real-time safety and emergency systems
-🚧 Challenges
-Some of the major challenges we faced were:
-- Designing an intuitive interface for elderly users
-- Integrating AI with real-world elder-care workflows
-- Handling voice interaction and multilingual requirements
-- Connecting frontend, backend, and database services
-- Designing reliable emergency notification flows
-- Developing the MVP within a limited timeframe
-🔮 Future Scope
-- Smartwatch and IoT integration
-- Advanced fall detection
-- Wearable health monitoring
-- Personalized digital twin
-- More Indian regional languages
-- Predictive health insights
-- Caregiver mobile application
-- Advanced AI health analytics
-👩‍💻 Team
-ElderGuard AI
-Built with ❤️ to make aging safer, smarter, and more connected.
+- Caregiver notification
+- Emergency contact management
+- Safety monitoring
+
+---
+
+## 💊 Medication Reminders
+
+Helps elderly users maintain their medication routine.
+
+- Medication reminders
+- Reminder status
+- Mark medication as taken
+- Daily medication tracking
+
+---
+
+## ❤️ Health & Activity Monitoring
+
+Provides an overview of important health and activity information.
+
+- Health overview
+- Recent activities
+- Safety events
+- Activity tracking
+- Caregiver visibility
+
+---
+
+## 👨‍👩‍👧 Care Circle
+
+Connects elderly users with trusted family members and caregivers.
+
+- Emergency contacts
+- Family communication
+- Caregiver notifications
+- Important user information
+
+---
+
+## 📅 Appointment & Schedule Management
+
+Helps manage daily schedules and medical appointments.
+
+- Doctor appointments
+- Schedule management
+- Routine tracking
+- Appointment information
+
+---
+
+## 🗣️ Multilingual Voice AI
+
+Designed with multilingual interaction in mind to improve accessibility for elderly users.
+
+The project includes research and experimentation around:
+
+- Speech recognition
+- Multilingual voice interaction
+- Tamil
+- Malayalam
+- Elder-focused voice assistance
+
+---
+
+# 🧠 AI Architecture
+
+```text
+                     ┌──────────────────────┐
+                     │    ElderGuard AI      │
+                     │      Frontend         │
+                     │    React + Vite       │
+                     └──────────┬───────────┘
+                                │
+                                ▼
+                     ┌──────────────────────┐
+                     │    Mitra AI           │
+                     │   Companion Layer     │
+                     └──────────┬───────────┘
+                                │
+              ┌─────────────────┼─────────────────┐
+              │                 │                 │
+              ▼                 ▼                 ▼
+        Voice Services     Safety System     Care System
+              │                 │                 │
+              ▼                 ▼                 ▼
+       Speech / Voice       SOS / Alerts      Medication
+       Multilingual         Fall Events       Appointments
+                            Monitoring         Schedules
+              │                 │                 │
+              └─────────────────┼─────────────────┘
+                                ▼
+                     ┌──────────────────────┐
+                     │    Java REST API     │
+                     │       Backend        │
+                     └──────────┬───────────┘
+                                │
+                                ▼
+                     ┌──────────────────────┐
+                     │       Supabase       │
+                     │   Database & Auth    │
+                     └──────────────────────┘
